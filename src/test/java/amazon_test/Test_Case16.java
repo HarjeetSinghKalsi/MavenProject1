@@ -10,13 +10,19 @@ import amazon_source.Login_Page;
 
 //auto suggestions of amazon 
 
-public class Test_Class16 extends Launch_Quit
+public class Test_Case16 extends Launch_Quit
 {
 
 @Test
 	public void show_product_details() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 	Home_Page h1 = new Home_Page(driver);
+	h1.search();
+	
+	
+	
+	
+	/*
 	h1.accountandlist(driver);
 	h1.signin();
 	
@@ -28,7 +34,7 @@ public class Test_Class16 extends Launch_Quit
 	l1.un_cont();
 	l1.valid_password();
 	l1.pwd_sign();
-	h1.auto_suggestion();
+	h1.auto_suggestion();*/
 	
 	}
 }
