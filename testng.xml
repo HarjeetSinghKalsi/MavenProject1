@@ -15,8 +15,8 @@
       <class name="amazon_test.Test_Case11"/>
       <class name="amazon_test.Test_Case12"/>	
       <class name="amazon_test.Test_Case13"/>
-      <class name="amazon_test.Test_Cas14"/>
-      <class name="amazon_test.Test_Cas15"/>     
+      <class name="amazon_test.Test_Case14"/>
+      <class name="amazon_test.Test_Case15"/>     
      
     </classes>
   </test> <!-- Test -->
