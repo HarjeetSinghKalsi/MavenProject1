@@ -3,7 +3,7 @@
 
 <suite name="Suite"  parallel="tests">
   <test thread-count="5" name="Test_Amazon">
-    <parameter name="browser" value="edge"></parameter>
+    
     <classes>
     
       <class name="amazon_test.Test_Case2"/>

@@ -21,14 +21,14 @@ public class Launch_Quit extends TestNG_Listners_Page
 
 	
 	@BeforeMethod
-	@Parameters("browser")
-	public void launch(String nameofthebrowser)
+	//@Parameters("browser")
+	public void launch()
 	{
-		/*driver = new ChromeDriver();
+		driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.in/");
 		
-		if (nameofthebrowser.equals("chrome"))
+	/*	if (nameofthebrowser.equals("chrome"))
 		{
 		driver = new ChromeDriver();
 		driver.get("https://www.amazon.in");
@@ -42,15 +42,15 @@ public class Launch_Quit extends TestNG_Listners_Page
 		driver.get("https://www.amazon.in");
 		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		}*/
+		}
 		
 		if (nameofthebrowser.equals("edge"))
 		{
-		driver = new EdgeDriver();
+		driver = new FirefoxDriver();
 		driver.get("https://www.amazon.in");
-		//driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		}
+		}*/
 	}
 	
 	@AfterMethod

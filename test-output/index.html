@@ -145,7 +145,6 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Test_Amazon&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;amazon_test.Test_Case2&quot;/&gt;
     &lt;/classes&gt;
@@ -191,12 +190,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login_logic')
 data.setCell(0, 2, 'amazon_test.Test_Case2')
-data.setCell(0, 3, 7403);
+data.setCell(0, 3, 14375);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -230,16 +229,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">amazon_test.Test_Case2</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">launch(edge)</span>
+                <span class="method-name">launch</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">login_logic</span>
-                <span class="method-start">9186 ms</span>
+                <span class="method-start">6555 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">17032 ms</span>
+                <span class="method-start">21442 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

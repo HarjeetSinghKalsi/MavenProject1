@@ -5,30 +5,23 @@
       <![CDATA[Test is passed]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-12-11T19:15:33 IST" name="Suite" finished-at="2024-12-11T19:15:50 IST" duration-ms="17103">
+  <suite started-at="2024-12-11T19:27:53 IST" name="Suite" finished-at="2024-12-11T19:28:14 IST" duration-ms="21507">
     <groups>
     </groups>
-    <test started-at="2024-12-11T19:15:33 IST" name="Test_Amazon" finished-at="2024-12-11T19:15:50 IST" duration-ms="17103">
+    <test started-at="2024-12-11T19:27:53 IST" name="Test_Amazon" finished-at="2024-12-11T19:28:14 IST" duration-ms="21507">
       <class name="amazon_test.Test_Case2">
-        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:amazon_test.Test_Case2@18078bef]" started-at="2024-12-11T19:15:33 IST" name="launch" finished-at="2024-12-11T19:15:42 IST" duration-ms="9185" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="launch()[pri:0, instance:amazon_test.Test_Case2@38d8f54a]" started-at="2024-12-11T19:27:53 IST" name="launch" finished-at="2024-12-11T19:27:59 IST" duration-ms="6551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="login_logic()[pri:0, instance:amazon_test.Test_Case2@18078bef]" started-at="2024-12-11T19:15:42 IST" name="login_logic" finished-at="2024-12-11T19:15:50 IST" duration-ms="7403" status="PASS">
+        <test-method signature="login_logic()[pri:0, instance:amazon_test.Test_Case2@38d8f54a]" started-at="2024-12-11T19:27:59 IST" name="login_logic" finished-at="2024-12-11T19:28:13 IST" duration-ms="14375" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test is passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- login_logic -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:amazon_test.Test_Case2@18078bef]" started-at="2024-12-11T19:15:50 IST" name="quit" finished-at="2024-12-11T19:15:50 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:amazon_test.Test_Case2@38d8f54a]" started-at="2024-12-11T19:28:14 IST" name="quit" finished-at="2024-12-11T19:28:14 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
