@@ -7,17 +7,7 @@
     <classes>
     
       <class name="amazon_test.Test_Case2"/>
-      <class name="amazon_test.Test_Case4"/>
-      <class name="amazon_test.Test_Case5"/>	
-      <class name="amazon_test.Test_Case8"/>
-      <class name="amazon_test.Test_Case9"/>
-      <class name="amazon_test.Test_Case10"/>
-      <class name="amazon_test.Test_Case11"/>
-      <class name="amazon_test.Test_Case12"/>	
-      <class name="amazon_test.Test_Case13"/>
-      <class name="amazon_test.Test_Case14"/>
-      <class name="amazon_test.Test_Case15"/>     
-     
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
