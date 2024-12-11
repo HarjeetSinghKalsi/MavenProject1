@@ -15,7 +15,7 @@ import amazon_source.Login_Page;
 
 public class Test_Case4 extends Launch_Quit
 {
-	@Test //(retryAnalyzer=amazon_source.I_Retry_Analyzer.class)
+	@Test (retryAnalyzer=amazon_source.I_Retry_Analyzer.class)
 	public void edit_address() throws EncryptedDocumentException, IOException
 	{
 	Home_Page h1 = new Home_Page(driver);

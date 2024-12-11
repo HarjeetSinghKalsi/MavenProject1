@@ -1,5 +1,6 @@
 package amazon_source;
 
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
@@ -11,7 +12,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class Home_Page  extends DDT_Page
@@ -20,7 +23,7 @@ public class Home_Page  extends DDT_Page
 	 WebDriver driver;
 	 
 	//step 1
-    @FindBy(xpath="//span[@class='nav-line-2 ']") //hoverover signing
+    @FindBy(xpath="(//span[@class='nav-icon nav-arrow'])[2]") //hoverover signing
 	WebElement accountandlist;
     
     @FindBy(xpath="//span[.='Your Account']") //your account
@@ -32,7 +35,7 @@ public class Home_Page  extends DDT_Page
     @FindBy(xpath="//a[.='Your Orders']") //your last order
     WebElement last_order;
       
-    @FindBy(xpath="//span[.='Sign in']") //clicking on sign in
+    @FindBy(xpath="(//span[@class='nav-action-inner'])[1]") //clicking on sign in
 	WebElement signin_to_login; 
     
     @FindBy(name="field-keywords") //search 
@@ -52,7 +55,7 @@ public class Home_Page  extends DDT_Page
     List<WebElement> auto_sugg; 
     
      
-    @FindBy(id="nav-item-signout") //assertion signout
+    @FindBy(css="a[id='nav-item-signout']") //assertion signout
     public WebElement signoutamazon;
 	
 	@FindBy(id="s-result-sort-select") //sorting
@@ -73,6 +76,8 @@ public class Home_Page  extends DDT_Page
     
     public void account()
     {
+    	WebDriverWait w1 = new WebDriverWait(driver, Duration.ofSeconds(10));
+    	w1.until(ExpectedConditions.elementToBeClickable(your_account));
     	your_account.click();
     }
     
@@ -88,7 +93,8 @@ public class Home_Page  extends DDT_Page
      
     public void signin()
     {
-    	
+    	WebDriverWait w2 = new WebDriverWait(driver, Duration.ofSeconds(10));
+    	w2.until(ExpectedConditions.elementToBeClickable(signin_to_login));
     	signin_to_login.click();
     }
     
@@ -175,6 +181,8 @@ public class Home_Page  extends DDT_Page
     public boolean sign_out()  // 1st way of using assertion
 	
    	{
+    	WebDriverWait w3 = new WebDriverWait(driver, Duration.ofSeconds(10));
+    	w3.until(ExpectedConditions.elementToBeClickable(signoutamazon));
     	boolean status = signoutamazon.isDisplayed(); 
     	return status;
     	
