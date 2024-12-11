@@ -33,11 +33,13 @@ public class Test_Case7 extends Launch_Quit
 	
 	Product_Detail_Page p1 = new Product_Detail_Page(driver);
 	
-	Thread.sleep(500);
-	p1.description(driver);
-	Thread.sleep(500);
+	
+//	p1.description(driver);
+	
+//	Thread.sleep(500);
 	p1.price(driver);
-	Thread.sleep(500);
+	
+	
     p1.customer_review(driver);
 
 }

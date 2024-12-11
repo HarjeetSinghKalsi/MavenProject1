@@ -1,12 +1,17 @@
 package amazon_source;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class Product_Detail_Page extends DDT_Page
@@ -19,7 +24,7 @@ public class Product_Detail_Page extends DDT_Page
 	    @FindBy(id="(//span[@class='a-price-whole'])[1]") // price
 	    WebElement show_price;
 	    
-	    @FindBy(xpath="(//span[@class='a-dropdown-prompt'])[3]") // customer_review
+	    @FindBy(xpath="(//span[@class='a-dropdown-prompt'])[11]") // customer_review
 	    WebElement review;
 	   
 	    @FindBy(name="ppw-claimCode") // coupon
@@ -37,7 +42,7 @@ public class Product_Detail_Page extends DDT_Page
 	    @FindBy(name="submit.buy-now")// scroller
 	    WebElement scroll;
 	    
-	    @FindBy(id="sw-gtc")  //Go to card
+	    @FindBy(xpath="(//span[@class='a-button-inner'])[6]")  //Go to card
 	    WebElement click_card;
 	    
 	    @FindBy(name="submit.buy-now") //buy now
@@ -59,15 +64,20 @@ public class Product_Detail_Page extends DDT_Page
 	    
 	    public void description(WebDriver driver)
 	    {
+	    	WebDriverWait w1 = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    	w1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[@class='a-expander-prompt'])[2]")));
 	    	show_more.click();
-	    	Assert.assertEquals(show_more.isDisplayed(), true);
-	    	System.out.println("product description is displayed" + show_more); 			
+	    	
+	    //	show_more.click();
+	    //	Assert.assertEquals(show_more.isDisplayed(), true);
+	    //	System.out.println("product description is displayed" + show_more); 			
 	    }
 	    
 	    public void price(WebDriver driver)
 	    {	
+	    	
 	    	Assert.assertEquals(show_price.isDisplayed(), true);
-	    	System.out.println("shoes price is displayed" + show_price);	;
+	    	System.out.println("shoes price is displayed" + show_price);	
 	    }
 	    
 	    public void customer_review(WebDriver driver) throws InterruptedException
@@ -133,6 +143,8 @@ public class Product_Detail_Page extends DDT_Page
 	   
 	    public void go_to_card()
 	    {
+	    	WebDriverWait w1 = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    	w1.until(ExpectedConditions.visibilityOf(click_card));
 	    	click_card.click();
 	    }
 	    

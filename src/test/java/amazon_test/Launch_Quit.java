@@ -24,7 +24,7 @@ public class Launch_Quit extends TestNG_Listners_Page
 //	@Parameters("browser")
 	public void launch()
 	{
-		driver = new ChromeDriver();
+		driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.in/");
 		

@@ -36,7 +36,7 @@ public class Test_Case10 extends Launch_Quit
 	Product_Detail_Page p1 = new Product_Detail_Page (driver);
 	
 	p1.update_item_quantity();
-	p1.scroller(driver);
+	//p1.scroller(driver);
 	p1.add_to_cart();
 	p1.go_to_card();
 	p1.remove_item();

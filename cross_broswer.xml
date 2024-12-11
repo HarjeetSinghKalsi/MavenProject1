@@ -7,7 +7,7 @@
   <parameter name="browser" value="chrome"></parameter>
   
     <classes>
-      <class name="amazon_test.Test_Case2"/>
+      <class name="amazon_test.Test_Case14"/>
     </classes>
   </test> <!-- Test -->
  
@@ -15,7 +15,7 @@
   <parameter name="browser" value="firefox"></parameter>
   
     <classes>
-      <class name="amazon_test.Test_Case5"/>
+      <class name="amazon_test.Test_Case15"/>
     </classes>
   </test> <!-- Test -->
   

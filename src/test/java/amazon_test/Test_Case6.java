@@ -36,18 +36,27 @@ public class Test_Case6 extends Launch_Quit
 		l1.pwd_sign(); 	
 		
 		Filters_Page f1 = new Filters_Page(driver);
+		
 		h1.search();
-		Thread.sleep(1000);
-	//	f1.shoe_size();
-		Thread.sleep(1000);
-    //  f1.brand_puma();
-		Thread.sleep(1000);
-	//	f1.colour();	
-		Thread.sleep(1000);
-   //	f1.formal_shoe();
-//		Thread.sleep(1000);
+	
+		 Thread.sleep(1000);
 		f1.price_range(driver);
-				
+			
+		f1.GO();
+			
+		Thread.sleep(1000);	
+		f1.shoe_size();
+		
+		Thread.sleep(1000);	
+        f1.brand_puma();
+        
+		Thread.sleep(1000);
+		f1.colour();
+		
+    //	Thread.sleep(1000);
+	//    f1.formal_shoe();
+		       		
+       		
 				
 	
 		
