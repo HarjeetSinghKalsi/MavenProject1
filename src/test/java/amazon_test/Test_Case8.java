@@ -40,7 +40,7 @@ public class Test_Case8 extends Launch_Quit
 	 Thread.sleep(1000);
 	 
 	h1.sorting_arrivals();
-	
+
 
 	}
 }

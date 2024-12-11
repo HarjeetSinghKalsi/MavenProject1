@@ -37,7 +37,7 @@ public class Test_Case3 extends Launch_Quit
 		
 		Assert.assertEquals(s1.pwd_continue.isDisplayed(), true, "test is failed");
 		
-	
+		
 	
 	}
 }

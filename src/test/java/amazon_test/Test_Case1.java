@@ -35,6 +35,7 @@ public class Test_Case1 extends Launch_Quit
 		
 		Assert.assertEquals(r1.verifyno_tf.isDisplayed(), true, "TC_failed");
 		
+		driver.close();
 		
 		
 		

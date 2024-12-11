@@ -41,6 +41,8 @@ public class Test_Case2 extends Launch_Quit
 	  //	Assert.assertEquals(h1.sign_out(), true, "test is failed"); 
 	  //	Assert.assertTrue(h1.sign_out(), "test is failed");
 	    
+	    
+	    
 		
 		    
 		}
